@@ -1,0 +1,112 @@
+﻿<Window x:Class="WpfMed.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfMed"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid ShowGridLines="True">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition />
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <!-- типа логотип компании -->
+            <!--<Image 
+            Source="./Img/simon.png" 
+            Grid.RowSpan="2"/> -->
+
+            <StackPanel 
+        Orientation="Vertical"
+        Grid.RowSpan="3"
+        VerticalAlignment="Bottom">
+                <Button 
+            x:Name="ExitButton"
+            Content="Выход" 
+            Click="ExitButton_Click"
+            Height="50"/>
+            </StackPanel>
+            <DataGrid
+    Grid.Row="1"
+    Grid.Column="1"
+    CanUserAddRows="False"
+    AutoGenerateColumns="False"
+    ItemsSource="{Binding YearAList}" >
+                <DataGrid.Columns>
+                    <DataGridTextColumn
+            Header="Название"
+            Binding="{Binding Name}"/>
+                    <DataGridTextColumn
+            Header="Автор"
+            Binding="{Binding Avtor }"/>
+                    <DataGridTextColumn
+            Header="Издательство"
+            Binding="{Binding Izdatelstvo}"/>
+                    <DataGridTextColumn
+            Header="Год"
+            Binding="{Binding Year }"/>
+                    <DataGridTextColumn
+            Header="Количество"
+            Binding="{Binding Kolichestvo  }"/>
+
+                </DataGrid.Columns>
+
+            </DataGrid>
+            <WrapPanel
+        Orientation="Horizontal"
+        Grid.Column="1"
+        MinHeight="50">
+                <Label 
+    Content="Год:"
+    VerticalAlignment="Center"/>
+
+                <ComboBox
+     Name="NameFilterComboBox"
+    SelectionChanged="NameFilterComboBox_SelectionChanged"
+    VerticalAlignment="Center"
+    MinWidth="100"
+    SelectedIndex="0"
+    ItemsSource="{Binding YearAList}">
+
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <Label 
+                Content="{Binding Title}"/>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+                <Label 
+  Content="Поиск" 
+  VerticalAlignment="Center"/>
+                <TextBox
+  Width="100"
+  VerticalAlignment="Center"
+  x:Name="SearchFilterTextBox" 
+  KeyUp="SearchFilter_KeyUp" TextChanged="SearchFilterTextBox_TextChanged"/>
+                <Label 
+    Content="Сортировка:" 
+    VerticalAlignment="Center"/>
+                <RadioButton
+    GroupName="Age"
+    Tag="1"
+    Content="По возрастанию"
+    IsChecked="True"
+    Checked="RadioButton_Checked"
+    VerticalAlignment="Center"/>
+                <RadioButton
+    GroupName="Age"
+    Tag="2"
+    Content="По убыванию"
+    Checked="RadioButton_Checked"
+    VerticalAlignment="Center"/>
+            </WrapPanel>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,15 @@
+C:\Users\User\source\repos\Wpfprobnic\Wpfprobnic\bin\Debug\Wpfprobnic.exe.config
+C:\Users\User\source\repos\Wpfprobnic\Wpfprobnic\bin\Debug\Wpfprobnic.exe
+C:\Users\User\source\repos\Wpfprobnic\Wpfprobnic\bin\Debug\Wpfprobnic.pdb
+C:\Users\User\source\repos\Wpfprobnic\Wpfprobnic\obj\Debug\Wpfprobnic.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Wpfprobnic\Wpfprobnic\obj\Debug\MainWindow.g.cs
+C:\Users\User\source\repos\Wpfprobnic\Wpfprobnic\obj\Debug\App.g.cs
+C:\Users\User\source\repos\Wpfprobnic\Wpfprobnic\obj\Debug\Wpfprobnic_MarkupCompile.cache
+C:\Users\User\source\repos\Wpfprobnic\Wpfprobnic\obj\Debug\Wpfprobnic_MarkupCompile.lref
+C:\Users\User\source\repos\Wpfprobnic\Wpfprobnic\obj\Debug\MainWindow.baml
+C:\Users\User\source\repos\Wpfprobnic\Wpfprobnic\obj\Debug\Wpfprobnic.g.resources
+C:\Users\User\source\repos\Wpfprobnic\Wpfprobnic\obj\Debug\Wpfprobnic.Properties.Resources.resources
+C:\Users\User\source\repos\Wpfprobnic\Wpfprobnic\obj\Debug\Wpfprobnic.csproj.GenerateResource.cache
+C:\Users\User\source\repos\Wpfprobnic\Wpfprobnic\obj\Debug\Wpfprobnic.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Wpfprobnic\Wpfprobnic\obj\Debug\Wpfprobnic.exe
+C:\Users\User\source\repos\Wpfprobnic\Wpfprobnic\obj\Debug\Wpfprobnic.pdb
